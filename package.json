@@ -2,7 +2,7 @@
   "name": "biss-blockchain",
   "version": "1.0.0",
   "description": "`0x4543553d76289473c6d38fadfd4f13541bf43c19` - `_labc`",
-  "main": "index.js",
+  "main": "test.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

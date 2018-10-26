@@ -1,11 +1,39 @@
-wallet addr : `0x4543553d76289473c6d38fadfd4f13541bf43c19` - `_labc`
+# BISS-Blockchain
 
-```js
-personal.unlockAccount('0x4543553d76289473c6d38fadfd4f13541bf43c19')
+## Usage
+
+### 1. Generate new account
+One account for one device
+
+```json
+{"method": "personal_newAccount", "params": ["passphrase"]}
 ```
 
-```js
-klay.getBalance('4543553d76289473c6d38fadfd4f13541bf43c19')
+https://docs.klaytn.com/api/management.html#personal_newaccount
+
+### 2. Unlock account
+
+```json
+{"method": "personal_unlockAccount", "params": ["address", "passphrase", 300]}
+```
+https://docs.klaytn.com/api/management.html#personal_unlockaccount
+
+### 3. Send smart contract transaction
+Refer to `./test.js`
+
+## How to deploy & test
+
+### 1. Generate new account or use any account & Unlock
+Change address in `./blockchain/truffle.js`, `./blockchain/truffle.js`
+
+### 2. Deploy smart contract on network
+
+```bash
+$ cd blockchain
+$ truffle deploy --network klaytn --reset
 ```
 
-smart contract addr : `0x42086b831d21099ebf5c91d8df973c6c68fc5c03`
+Get `Transmission` smart contract address from output
+
+### 3. Modify `test.js`
+Modify smart contract address and sender address in `test.js` and run with `node test.js`
