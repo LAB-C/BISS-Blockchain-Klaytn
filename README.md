@@ -21,6 +21,10 @@ https://docs.klaytn.com/api/management.html#personal_unlockaccount
 ### 3. Send smart contract transaction
 Refer to `./test.js`
 
+```js
+Transmission.methods._save('DATA').send({from: 'ADDRESS'})
+```
+
 ## How to deploy & test
 
 ### 1. Generate new account or use any account & Unlock
