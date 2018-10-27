@@ -1,7 +1,6 @@
 # Custom
 .vscode
 .DS_Store
-blockchain/build
 
 # Logs
 logs

@@ -1,5 +1,5 @@
 var Caver = require('caver-js');
-var caver = new Caver('http://127.0.0.1:8551');
+var caver = new Caver('http://klaytn.ngrok.io');
 caver.klay.getCode('0x20c0b6bc23bfcbe9dad09221f90365f740f779c9').then(console.log);
 
 var Transmission = require('./blockchain/build/contracts/Transmission.json');
