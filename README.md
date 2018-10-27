@@ -46,6 +46,10 @@ print(klay.sendData(wallet, 'so what?'))
 
 > 공백은 상관없는 것 같은데 뭐 따옴표나 공백이 꼭 들어갈 필요는 없잖아? 만약 터지면 한대 때리고 고쳐줄 테니까 꼭 불러줘.
 
+### 5. 그럼 END는 어캐 데이터를 꺼내냐고?
+
+> 그건 파이썬으로 할 필요 없으니까 걍 `caver-js`로 하자. 제발... 그건 나중에 할게~ 아임 비지 나우
+
 ## How to deploy & test
 
 ### 1. Generate new account or use any account & Unlock
