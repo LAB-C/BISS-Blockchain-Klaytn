@@ -37,7 +37,7 @@ klay.unlockAccount(wallet, '_labc', 30000))
 
 패스프레이즈가 `_labc`인 wallet이라는 지갑주소를 언락한다. 마지막 인수는 언락 기간(초)이다. 즉 위 예제의 wallet은 30000초 동안 언락되고 그 이후에는 다시 lock된다.
 
-#### 4. 데이터를 보내자.
+### 4. 데이터를 보내자.
 ```python
 print(klay.sendData(wallet, 'so what?'))
 ```
