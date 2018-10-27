@@ -16,6 +16,7 @@ https://docs.klaytn.com/api/management.html#personal_newaccount
 ```json
 {"method": "personal_unlockAccount", "params": ["address", "passphrase", 300]}
 ```
+
 https://docs.klaytn.com/api/management.html#personal_unlockaccount
 
 ### 3. Send smart contract transaction
