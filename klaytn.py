@@ -19,5 +19,5 @@ class Klaytn:
         return True if self._request('personal_unlockAccount', params=[address, passphrase, duration])=='true' else False
 
     def sendData(self, wallet, data):
-        output = subprocess.Popen(['node', 'send.js', wallet, f'\'{data}\''], stdout=subprocess.PIPE ).communicate()[0]
+        output = subprocess.Popen(['node', 'send.js', wallet, '\\' + data + '\\'], stdout=subprocess.PIPE ).communicate()[0]
         return output.strip().decode()
