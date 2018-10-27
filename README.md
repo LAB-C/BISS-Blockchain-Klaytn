@@ -46,9 +46,19 @@ print(klay.sendData(wallet, 'so what?'))
 
 > 공백은 상관없는 것 같은데 뭐 따옴표나 공백이 꼭 들어갈 필요는 없잖아? 만약 터지면 한대 때리고 고쳐줄 테니까 꼭 불러줘.
 
-### 5. 그럼 END는 어캐 데이터를 꺼내냐고?
+### 5. 그럼 END 디바이스는 어캐 데이터를 꺼내냐고?
 
-> 그건 파이썬으로 할 필요 없으니까 걍 `caver-js`로 하자. 제발... 그건 나중에 할게~ 아임 비지 나우
+```js
+var Caver = require('caver-js');
+var caver = new Caver('http://klaytn.ngrok.io');
+
+var transactionHash = '0xe1c47ed7dcdc757bb73cee22d118ef0a3f4c126deae8b88b811a71d76f0704ba';
+caver.klay.getTransaction(transactionHash).then(function(transaction) {
+    console.log(caver.utils.hexToAscii(transaction.input).trim().replace('6FÐ!', ''));
+});
+```
+
+txHash(`transactionHash`)를 알고 있으니까 이를 이용해서 input data를 구하고 정돈해주면 된다.
 
 ## How to deploy & test
 
