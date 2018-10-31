@@ -45,13 +45,13 @@ Modify smart contract address and sender address in `test.js` and run with `node
 
 
 
-### If you need transaction infromation API
+## If you need transaction infromation API
 
 https://apiscope.klaytn.com/api/transaction/[txhash]
 
-
-# You can Get this data
+### You can Get this type of data
 ```
-"status" "id" "blockHash" "blockNumber" "contractAddress" "cumulativeGasUsed" "from": "gas": "gasPrice" "gasUsed" "input" "nonce" "status" "to" "transactionCategory" "transactionIndex" "timestamp" "txHash" "value"
+"status" "id" "blockHash" "blockNumber" "contractAddress" "cumulativeGasUsed" "from": "gas": "gasPrice" "gasUsed" "input"
+"nonce" "status" "to" "transactionCategory" "transactionIndex" "timestamp" "txHash" "value"
 ```
 
