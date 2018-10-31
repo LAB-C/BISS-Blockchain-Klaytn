@@ -76,3 +76,16 @@ Get `Transmission` smart contract address from output
 
 ### 3. Modify `test.js`
 Modify smart contract address and sender address in `test.js` and run with `node test.js`
+
+
+
+## If you need transaction infromation API
+
+https://apiscope.klaytn.com/api/transaction/[txhash]
+
+### You can Get this type of data
+```
+"status" "id" "blockHash" "blockNumber" "contractAddress" "cumulativeGasUsed" "from": "gas": "gasPrice" "gasUsed" "input"
+"nonce" "status" "to" "transactionCategory" "transactionIndex" "timestamp" "txHash" "value"
+```
+
