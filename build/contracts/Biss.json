@@ -1,0 +1,2273 @@
+{
+  "contractName": "Biss",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_fileID",
+          "type": "uint256"
+        },
+        {
+          "name": "_key",
+          "type": "string"
+        }
+      ],
+      "name": "saveKey",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_fileID",
+          "type": "uint256"
+        },
+        {
+          "name": "_hash",
+          "type": "string"
+        }
+      ],
+      "name": "saveHash",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_fileID",
+          "type": "uint256"
+        }
+      ],
+      "name": "loadKey",
+      "outputs": [
+        {
+          "name": "_key",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_fileID",
+          "type": "uint256"
+        },
+        {
+          "name": "_hash",
+          "type": "string"
+        }
+      ],
+      "name": "verifyHash",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5061062d806100206000396000f300608060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680631bc274161461006757806375c6e781146100da578063ecd0c26214610165578063ff889865146101d8575b600080fd5b34801561007357600080fd5b506100d860048036038101908080359060200190929190803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919291929050505061027e565b005b3480156100e657600080fd5b5061014b60048036038101908080359060200190929190803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091929192905050506102ac565b604051808215151515815260200191505060405180910390f35b34801561017157600080fd5b506101d660048036038101908080359060200190929190803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290505050610477565b005b3480156101e457600080fd5b50610203600480360381019080803590602001909291905050506104a5565b6040518080602001828103825283818151815260200191508051906020019080838360005b83811015610243578082015181840152602081019050610228565b50505050905090810190601f1680156102705780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b8060008084815260200190815260200160002060000190805190602001906102a792919061055c565b505050565b6000816040516020018082805190602001908083835b6020831015156102e757805182526020820191506020810190506020830392506102c2565b6001836020036101000a0380198251168184511680821785525050505050509050019150506040516020818303038152906040526040518082805190602001908083835b602083101515610350578051825260208201915060208101905060208303925061032b565b6001836020036101000a03801982511681845116808217855250505050505090500191505060405180910390206000191660008085815260200190815260200160002060010160405160200180828054600181600116156101000203166002900480156103f45780601f106103d25761010080835404028352918201916103f4565b820191906000526020600020905b8154815290600101906020018083116103e0575b50509150506040516020818303038152906040526040518082805190602001908083835b60208310151561043d5780518252602082019150602081019050602083039250610418565b6001836020036101000a03801982511681845116808217855250505050505090500191505060405180910390206000191614905092915050565b8060008084815260200190815260200160002060010190805190602001906104a092919061055c565b505050565b60606000808381526020019081526020016000206000018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156105505780601f1061052557610100808354040283529160200191610550565b820191906000526020600020905b81548152906001019060200180831161053357829003601f168201915b50505050509050919050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061059d57805160ff19168380011785556105cb565b828001600101855582156105cb579182015b828111156105ca5782518255916020019190600101906105af565b5b5090506105d891906105dc565b5090565b6105fe91905b808211156105fa5760008160009055506001016105e2565b5090565b905600a165627a7a723058200e9f61ecf4af346aa68251500ce30f36f53d694f94b5f7a88a01fe8efe2098560029",
+  "deployedBytecode": "0x608060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680631bc274161461006757806375c6e781146100da578063ecd0c26214610165578063ff889865146101d8575b600080fd5b34801561007357600080fd5b506100d860048036038101908080359060200190929190803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919291929050505061027e565b005b3480156100e657600080fd5b5061014b60048036038101908080359060200190929190803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091929192905050506102ac565b604051808215151515815260200191505060405180910390f35b34801561017157600080fd5b506101d660048036038101908080359060200190929190803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290505050610477565b005b3480156101e457600080fd5b50610203600480360381019080803590602001909291905050506104a5565b6040518080602001828103825283818151815260200191508051906020019080838360005b83811015610243578082015181840152602081019050610228565b50505050905090810190601f1680156102705780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b8060008084815260200190815260200160002060000190805190602001906102a792919061055c565b505050565b6000816040516020018082805190602001908083835b6020831015156102e757805182526020820191506020810190506020830392506102c2565b6001836020036101000a0380198251168184511680821785525050505050509050019150506040516020818303038152906040526040518082805190602001908083835b602083101515610350578051825260208201915060208101905060208303925061032b565b6001836020036101000a03801982511681845116808217855250505050505090500191505060405180910390206000191660008085815260200190815260200160002060010160405160200180828054600181600116156101000203166002900480156103f45780601f106103d25761010080835404028352918201916103f4565b820191906000526020600020905b8154815290600101906020018083116103e0575b50509150506040516020818303038152906040526040518082805190602001908083835b60208310151561043d5780518252602082019150602081019050602083039250610418565b6001836020036101000a03801982511681845116808217855250505050505090500191505060405180910390206000191614905092915050565b8060008084815260200190815260200160002060010190805190602001906104a092919061055c565b505050565b60606000808381526020019081526020016000206000018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156105505780601f1061052557610100808354040283529160200191610550565b820191906000526020600020905b81548152906001019060200180831161053357829003601f168201915b50505050509050919050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061059d57805160ff19168380011785556105cb565b828001600101855582156105cb579182015b828111156105ca5782518255916020019190600101906105af565b5b5090506105d891906105dc565b5090565b6105fe91905b808211156105fa5760008160009055506001016105e2565b5090565b905600a165627a7a723058200e9f61ecf4af346aa68251500ce30f36f53d694f94b5f7a88a01fe8efe2098560029",
+  "sourceMap": "26:872:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:872:0;;;;;;;",
+  "deployedSourceMap": "26:872:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;182:137;;8:9:-1;5:2;;;30:1;27;20:12;5:2;182:137:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;655:240;;8:9:-1;5:2;;;30:1;27;20:12;5:2;655:240:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;325:160;;8:9:-1;5:2;;;30:1;27;20:12;5:2;325:160:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;491:158;;8:9:-1;5:2;;;30:1;27;20:12;5:2;491:158:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;491:158:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;182:137;308:4;283:9;:18;293:7;283:18;;;;;;;;;;;:22;;:29;;;;;;;;;;;;:::i;:::-;;182:137;;:::o;655:240::-;724:4;880:5;863:23;;;;;;;;;;;;;;;36:153:-1;66:2;61:3;58:11;51:19;36:153;;;182:3;176:10;171:3;164:23;98:2;93:3;89:12;82:19;;123:2;118:3;114:12;107:19;;148:2;143:3;139:12;132:19;;36:153;;;274:1;267:3;263:2;259:12;254:3;250:22;246:30;315:4;311:9;305:3;299:10;295:26;356:4;350:3;344:10;340:21;389:7;380;377:20;372:3;365:33;3:399;;;863:23:0;;;;;;;;;;;49:4:-1;39:7;30;26:21;22:32;13:7;6:49;863:23:0;;;853:34;;;;;;;;;;;;;36:153:-1;66:2;61:3;58:11;51:19;36:153;;;182:3;176:10;171:3;164:23;98:2;93:3;89:12;82:19;;123:2;118:3;114:12;107:19;;148:2;143:3;139:12;132:19;;36:153;;;274:1;267:3;263:2;259:12;254:3;250:22;246:30;315:4;311:9;305:3;299:10;295:26;356:4;350:3;344:10;340:21;389:7;380;377:20;372:3;365:33;3:399;;;853:34:0;;;;;;;;;;;;;;;;797:90;;;824:9;:18;834:7;824:18;;;;;;;;;;;:23;;807:41;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;49:4:-1;39:7;30;26:21;22:32;13:7;6:49;807:41:0;;;797:52;;;;;;;;;;;;;36:153:-1;66:2;61:3;58:11;51:19;36:153;;;182:3;176:10;171:3;164:23;98:2;93:3;89:12;82:19;;123:2;118:3;114:12;107:19;;148:2;143:3;139:12;132:19;;36:153;;;274:1;267:3;263:2;259:12;254:3;250:22;246:30;315:4;311:9;305:3;299:10;295:26;356:4;350:3;344:10;340:21;389:7;380;377:20;372:3;365:33;3:399;;;797:52:0;;;;;;;;;;;;;;;;:90;;;;789:99;;655:240;;;;:::o;325:160::-;473:5;447:9;:18;457:7;447:18;;;;;;;;;;;:23;;:31;;;;;;;;;;;;:::i;:::-;;325:160;;:::o;491:158::-;543:11;620:9;:18;630:7;620:18;;;;;;;;;;;:22;;613:29;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;491:158;;;:::o;26:872::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.23;\n\ncontract Biss {\n\n    struct Firmware {\n        string key;\n        string hash;\n    }\n\n    mapping (uint => Firmware) firmwares; // fileid => Firmware\n\n    function saveKey(uint _fileID, string _key) public { // fileID의 펌웨어에 key를 저장\n        firmwares[_fileID].key = _key;\n    }\n\n    function saveHash(uint _fileID, string _hash) public { // fileID의 펌웨어에 hash(펌웨어 해시)를 저장\n        firmwares[_fileID].hash = _hash;\n    }\n\n    function loadKey(uint _fileID) public view returns (string _key) { // fileID로 해당 펌웨어의 key를 로드\n        _key = firmwares[_fileID].key;\n    }\n\n    function verifyHash(uint _fileID, string _hash) public view returns (bool) { // 해당 fileID의 해시가 _hash인지 확인\n        return (keccak256(abi.encodePacked(firmwares[_fileID].hash)) == keccak256(abi.encodePacked(_hash)));\n    }\n\n}\n",
+  "sourcePath": "/Users/junhoyeo/Desktop/BISS-Blockchain/contracts/Biss.sol",
+  "ast": {
+    "absolutePath": "/Users/junhoyeo/Desktop/BISS-Blockchain/contracts/Biss.sol",
+    "exportedSymbols": {
+      "Biss": [
+        84
+      ]
+    },
+    "id": 85,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 84,
+        "linearizedBaseContracts": [
+          84
+        ],
+        "name": "Biss",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Biss.Firmware",
+            "id": 6,
+            "members": [
+              {
+                "constant": false,
+                "id": 3,
+                "name": "key",
+                "nodeType": "VariableDeclaration",
+                "scope": 6,
+                "src": "73:10:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 2,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "73:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5,
+                "name": "hash",
+                "nodeType": "VariableDeclaration",
+                "scope": 6,
+                "src": "93:11:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 4,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "93:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Firmware",
+            "nodeType": "StructDefinition",
+            "scope": 84,
+            "src": "47:64:0",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 10,
+            "name": "firmwares",
+            "nodeType": "VariableDeclaration",
+            "scope": 84,
+            "src": "117:36:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Firmware_$6_storage_$",
+              "typeString": "mapping(uint256 => struct Biss.Firmware)"
+            },
+            "typeName": {
+              "id": 9,
+              "keyType": {
+                "id": 7,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "126:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "117:26:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Firmware_$6_storage_$",
+                "typeString": "mapping(uint256 => struct Biss.Firmware)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 8,
+                "name": "Firmware",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 6,
+                "src": "134:8:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Firmware_$6_storage_ptr",
+                  "typeString": "struct Biss.Firmware"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 24,
+              "nodeType": "Block",
+              "src": "233:86:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 22,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 17,
+                          "name": "firmwares",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 10,
+                          "src": "283:9:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Firmware_$6_storage_$",
+                            "typeString": "mapping(uint256 => struct Biss.Firmware storage ref)"
+                          }
+                        },
+                        "id": 19,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "id": 18,
+                          "name": "_fileID",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 12,
+                          "src": "293:7:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "283:18:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Firmware_$6_storage",
+                          "typeString": "struct Biss.Firmware storage ref"
+                        }
+                      },
+                      "id": 20,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "key",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 3,
+                      "src": "283:22:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 21,
+                      "name": "_key",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 14,
+                      "src": "308:4:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "283:29:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 23,
+                  "nodeType": "ExpressionStatement",
+                  "src": "283:29:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 25,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "saveKey",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 15,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12,
+                  "name": "_fileID",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 25,
+                  "src": "199:12:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 11,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "199:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 14,
+                  "name": "_key",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 25,
+                  "src": "213:11:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 13,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "213:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "198:27:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 16,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "233:0:0"
+            },
+            "scope": 84,
+            "src": "182:137:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 39,
+              "nodeType": "Block",
+              "src": "378:107:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 37,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 32,
+                          "name": "firmwares",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 10,
+                          "src": "447:9:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Firmware_$6_storage_$",
+                            "typeString": "mapping(uint256 => struct Biss.Firmware storage ref)"
+                          }
+                        },
+                        "id": 34,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "id": 33,
+                          "name": "_fileID",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 27,
+                          "src": "457:7:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "447:18:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Firmware_$6_storage",
+                          "typeString": "struct Biss.Firmware storage ref"
+                        }
+                      },
+                      "id": 35,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "hash",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 5,
+                      "src": "447:23:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 36,
+                      "name": "_hash",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 29,
+                      "src": "473:5:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "447:31:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 38,
+                  "nodeType": "ExpressionStatement",
+                  "src": "447:31:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 40,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "saveHash",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 30,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 27,
+                  "name": "_fileID",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40,
+                  "src": "343:12:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 26,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "343:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 29,
+                  "name": "_hash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40,
+                  "src": "357:12:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 28,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "357:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "342:28:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 31,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "378:0:0"
+            },
+            "scope": 84,
+            "src": "325:160:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 54,
+              "nodeType": "Block",
+              "src": "556:93:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 52,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 47,
+                      "name": "_key",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 45,
+                      "src": "613:4:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 48,
+                          "name": "firmwares",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 10,
+                          "src": "620:9:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Firmware_$6_storage_$",
+                            "typeString": "mapping(uint256 => struct Biss.Firmware storage ref)"
+                          }
+                        },
+                        "id": 50,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "id": 49,
+                          "name": "_fileID",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 42,
+                          "src": "630:7:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "620:18:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Firmware_$6_storage",
+                          "typeString": "struct Biss.Firmware storage ref"
+                        }
+                      },
+                      "id": 51,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "key",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 3,
+                      "src": "620:22:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "src": "613:29:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_memory_ptr",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "id": 53,
+                  "nodeType": "ExpressionStatement",
+                  "src": "613:29:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 55,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "loadKey",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 43,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 42,
+                  "name": "_fileID",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55,
+                  "src": "508:12:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 41,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "508:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "507:14:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 46,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 45,
+                  "name": "_key",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55,
+                  "src": "543:11:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 44,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "543:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "542:13:0"
+            },
+            "scope": 84,
+            "src": "491:158:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 82,
+              "nodeType": "Block",
+              "src": "730:165:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "components": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        },
+                        "id": 79,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "arguments": [
+                                {
+                                  "argumentTypes": null,
+                                  "expression": {
+                                    "argumentTypes": null,
+                                    "baseExpression": {
+                                      "argumentTypes": null,
+                                      "id": 67,
+                                      "name": "firmwares",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": 10,
+                                      "src": "824:9:0",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Firmware_$6_storage_$",
+                                        "typeString": "mapping(uint256 => struct Biss.Firmware storage ref)"
+                                      }
+                                    },
+                                    "id": 69,
+                                    "indexExpression": {
+                                      "argumentTypes": null,
+                                      "id": 68,
+                                      "name": "_fileID",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": 57,
+                                      "src": "834:7:0",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      }
+                                    },
+                                    "isConstant": false,
+                                    "isLValue": true,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "nodeType": "IndexAccess",
+                                    "src": "824:18:0",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_struct$_Firmware_$6_storage",
+                                      "typeString": "struct Biss.Firmware storage ref"
+                                    }
+                                  },
+                                  "id": 70,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "memberName": "hash",
+                                  "nodeType": "MemberAccess",
+                                  "referencedDeclaration": 5,
+                                  "src": "824:23:0",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_string_storage",
+                                    "typeString": "string storage ref"
+                                  }
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_string_storage",
+                                    "typeString": "string storage ref"
+                                  }
+                                ],
+                                "expression": {
+                                  "argumentTypes": null,
+                                  "id": 65,
+                                  "name": "abi",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 86,
+                                  "src": "807:3:0",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_magic_abi",
+                                    "typeString": "abi"
+                                  }
+                                },
+                                "id": 66,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "lValueRequested": false,
+                                "memberName": "encodePacked",
+                                "nodeType": "MemberAccess",
+                                "referencedDeclaration": null,
+                                "src": "807:16:0",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_function_abiencodepacked_pure$__$returns$_t_bytes_memory_ptr_$",
+                                  "typeString": "function () pure returns (bytes memory)"
+                                }
+                              },
+                              "id": 71,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "functionCall",
+                              "lValueRequested": false,
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "807:41:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_bytes_memory_ptr",
+                                "typeString": "bytes memory"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_bytes_memory_ptr",
+                                "typeString": "bytes memory"
+                              }
+                            ],
+                            "id": 64,
+                            "name": "keccak256",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 93,
+                            "src": "797:9:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
+                              "typeString": "function () pure returns (bytes32)"
+                            }
+                          },
+                          "id": 72,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "797:52:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "arguments": [
+                                {
+                                  "argumentTypes": null,
+                                  "id": 76,
+                                  "name": "_hash",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 59,
+                                  "src": "880:5:0",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_string_memory_ptr",
+                                    "typeString": "string memory"
+                                  }
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_string_memory_ptr",
+                                    "typeString": "string memory"
+                                  }
+                                ],
+                                "expression": {
+                                  "argumentTypes": null,
+                                  "id": 74,
+                                  "name": "abi",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 86,
+                                  "src": "863:3:0",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_magic_abi",
+                                    "typeString": "abi"
+                                  }
+                                },
+                                "id": 75,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "lValueRequested": false,
+                                "memberName": "encodePacked",
+                                "nodeType": "MemberAccess",
+                                "referencedDeclaration": null,
+                                "src": "863:16:0",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_function_abiencodepacked_pure$__$returns$_t_bytes_memory_ptr_$",
+                                  "typeString": "function () pure returns (bytes memory)"
+                                }
+                              },
+                              "id": 77,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "functionCall",
+                              "lValueRequested": false,
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "863:23:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_bytes_memory_ptr",
+                                "typeString": "bytes memory"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_bytes_memory_ptr",
+                                "typeString": "bytes memory"
+                              }
+                            ],
+                            "id": 73,
+                            "name": "keccak256",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 93,
+                            "src": "853:9:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
+                              "typeString": "function () pure returns (bytes32)"
+                            }
+                          },
+                          "id": 78,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "853:34:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          }
+                        },
+                        "src": "797:90:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "id": 80,
+                    "isConstant": false,
+                    "isInlineArray": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "TupleExpression",
+                    "src": "796:92:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 63,
+                  "id": 81,
+                  "nodeType": "Return",
+                  "src": "789:99:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 83,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "verifyHash",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 60,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 57,
+                  "name": "_fileID",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 83,
+                  "src": "675:12:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 56,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "675:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 59,
+                  "name": "_hash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 83,
+                  "src": "689:12:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 58,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "689:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "674:28:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 63,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 62,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 83,
+                  "src": "724:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 61,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "724:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "723:6:0"
+            },
+            "scope": 84,
+            "src": "655:240:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 85,
+        "src": "26:872:0"
+      }
+    ],
+    "src": "0:899:0"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/junhoyeo/Desktop/BISS-Blockchain/contracts/Biss.sol",
+    "exportedSymbols": {
+      "Biss": [
+        84
+      ]
+    },
+    "id": 85,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 84,
+        "linearizedBaseContracts": [
+          84
+        ],
+        "name": "Biss",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Biss.Firmware",
+            "id": 6,
+            "members": [
+              {
+                "constant": false,
+                "id": 3,
+                "name": "key",
+                "nodeType": "VariableDeclaration",
+                "scope": 6,
+                "src": "73:10:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 2,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "73:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5,
+                "name": "hash",
+                "nodeType": "VariableDeclaration",
+                "scope": 6,
+                "src": "93:11:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 4,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "93:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Firmware",
+            "nodeType": "StructDefinition",
+            "scope": 84,
+            "src": "47:64:0",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 10,
+            "name": "firmwares",
+            "nodeType": "VariableDeclaration",
+            "scope": 84,
+            "src": "117:36:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Firmware_$6_storage_$",
+              "typeString": "mapping(uint256 => struct Biss.Firmware)"
+            },
+            "typeName": {
+              "id": 9,
+              "keyType": {
+                "id": 7,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "126:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "117:26:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Firmware_$6_storage_$",
+                "typeString": "mapping(uint256 => struct Biss.Firmware)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 8,
+                "name": "Firmware",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 6,
+                "src": "134:8:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Firmware_$6_storage_ptr",
+                  "typeString": "struct Biss.Firmware"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 24,
+              "nodeType": "Block",
+              "src": "233:86:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 22,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 17,
+                          "name": "firmwares",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 10,
+                          "src": "283:9:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Firmware_$6_storage_$",
+                            "typeString": "mapping(uint256 => struct Biss.Firmware storage ref)"
+                          }
+                        },
+                        "id": 19,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "id": 18,
+                          "name": "_fileID",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 12,
+                          "src": "293:7:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "283:18:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Firmware_$6_storage",
+                          "typeString": "struct Biss.Firmware storage ref"
+                        }
+                      },
+                      "id": 20,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "key",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 3,
+                      "src": "283:22:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 21,
+                      "name": "_key",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 14,
+                      "src": "308:4:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "283:29:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 23,
+                  "nodeType": "ExpressionStatement",
+                  "src": "283:29:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 25,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "saveKey",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 15,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12,
+                  "name": "_fileID",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 25,
+                  "src": "199:12:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 11,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "199:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 14,
+                  "name": "_key",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 25,
+                  "src": "213:11:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 13,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "213:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "198:27:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 16,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "233:0:0"
+            },
+            "scope": 84,
+            "src": "182:137:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 39,
+              "nodeType": "Block",
+              "src": "378:107:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 37,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 32,
+                          "name": "firmwares",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 10,
+                          "src": "447:9:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Firmware_$6_storage_$",
+                            "typeString": "mapping(uint256 => struct Biss.Firmware storage ref)"
+                          }
+                        },
+                        "id": 34,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "id": 33,
+                          "name": "_fileID",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 27,
+                          "src": "457:7:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "447:18:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Firmware_$6_storage",
+                          "typeString": "struct Biss.Firmware storage ref"
+                        }
+                      },
+                      "id": 35,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "hash",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 5,
+                      "src": "447:23:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 36,
+                      "name": "_hash",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 29,
+                      "src": "473:5:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "447:31:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 38,
+                  "nodeType": "ExpressionStatement",
+                  "src": "447:31:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 40,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "saveHash",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 30,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 27,
+                  "name": "_fileID",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40,
+                  "src": "343:12:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 26,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "343:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 29,
+                  "name": "_hash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40,
+                  "src": "357:12:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 28,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "357:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "342:28:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 31,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "378:0:0"
+            },
+            "scope": 84,
+            "src": "325:160:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 54,
+              "nodeType": "Block",
+              "src": "556:93:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 52,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 47,
+                      "name": "_key",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 45,
+                      "src": "613:4:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 48,
+                          "name": "firmwares",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 10,
+                          "src": "620:9:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Firmware_$6_storage_$",
+                            "typeString": "mapping(uint256 => struct Biss.Firmware storage ref)"
+                          }
+                        },
+                        "id": 50,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "id": 49,
+                          "name": "_fileID",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 42,
+                          "src": "630:7:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "620:18:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Firmware_$6_storage",
+                          "typeString": "struct Biss.Firmware storage ref"
+                        }
+                      },
+                      "id": 51,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "key",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 3,
+                      "src": "620:22:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "src": "613:29:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_memory_ptr",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "id": 53,
+                  "nodeType": "ExpressionStatement",
+                  "src": "613:29:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 55,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "loadKey",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 43,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 42,
+                  "name": "_fileID",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55,
+                  "src": "508:12:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 41,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "508:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "507:14:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 46,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 45,
+                  "name": "_key",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55,
+                  "src": "543:11:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 44,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "543:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "542:13:0"
+            },
+            "scope": 84,
+            "src": "491:158:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 82,
+              "nodeType": "Block",
+              "src": "730:165:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "components": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        },
+                        "id": 79,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "arguments": [
+                                {
+                                  "argumentTypes": null,
+                                  "expression": {
+                                    "argumentTypes": null,
+                                    "baseExpression": {
+                                      "argumentTypes": null,
+                                      "id": 67,
+                                      "name": "firmwares",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": 10,
+                                      "src": "824:9:0",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Firmware_$6_storage_$",
+                                        "typeString": "mapping(uint256 => struct Biss.Firmware storage ref)"
+                                      }
+                                    },
+                                    "id": 69,
+                                    "indexExpression": {
+                                      "argumentTypes": null,
+                                      "id": 68,
+                                      "name": "_fileID",
+                                      "nodeType": "Identifier",
+                                      "overloadedDeclarations": [],
+                                      "referencedDeclaration": 57,
+                                      "src": "834:7:0",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                      }
+                                    },
+                                    "isConstant": false,
+                                    "isLValue": true,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "nodeType": "IndexAccess",
+                                    "src": "824:18:0",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_struct$_Firmware_$6_storage",
+                                      "typeString": "struct Biss.Firmware storage ref"
+                                    }
+                                  },
+                                  "id": 70,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "memberName": "hash",
+                                  "nodeType": "MemberAccess",
+                                  "referencedDeclaration": 5,
+                                  "src": "824:23:0",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_string_storage",
+                                    "typeString": "string storage ref"
+                                  }
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_string_storage",
+                                    "typeString": "string storage ref"
+                                  }
+                                ],
+                                "expression": {
+                                  "argumentTypes": null,
+                                  "id": 65,
+                                  "name": "abi",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 86,
+                                  "src": "807:3:0",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_magic_abi",
+                                    "typeString": "abi"
+                                  }
+                                },
+                                "id": 66,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "lValueRequested": false,
+                                "memberName": "encodePacked",
+                                "nodeType": "MemberAccess",
+                                "referencedDeclaration": null,
+                                "src": "807:16:0",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_function_abiencodepacked_pure$__$returns$_t_bytes_memory_ptr_$",
+                                  "typeString": "function () pure returns (bytes memory)"
+                                }
+                              },
+                              "id": 71,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "functionCall",
+                              "lValueRequested": false,
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "807:41:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_bytes_memory_ptr",
+                                "typeString": "bytes memory"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_bytes_memory_ptr",
+                                "typeString": "bytes memory"
+                              }
+                            ],
+                            "id": 64,
+                            "name": "keccak256",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 93,
+                            "src": "797:9:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
+                              "typeString": "function () pure returns (bytes32)"
+                            }
+                          },
+                          "id": 72,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "797:52:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "arguments": [
+                                {
+                                  "argumentTypes": null,
+                                  "id": 76,
+                                  "name": "_hash",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 59,
+                                  "src": "880:5:0",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_string_memory_ptr",
+                                    "typeString": "string memory"
+                                  }
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_string_memory_ptr",
+                                    "typeString": "string memory"
+                                  }
+                                ],
+                                "expression": {
+                                  "argumentTypes": null,
+                                  "id": 74,
+                                  "name": "abi",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 86,
+                                  "src": "863:3:0",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_magic_abi",
+                                    "typeString": "abi"
+                                  }
+                                },
+                                "id": 75,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "lValueRequested": false,
+                                "memberName": "encodePacked",
+                                "nodeType": "MemberAccess",
+                                "referencedDeclaration": null,
+                                "src": "863:16:0",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_function_abiencodepacked_pure$__$returns$_t_bytes_memory_ptr_$",
+                                  "typeString": "function () pure returns (bytes memory)"
+                                }
+                              },
+                              "id": 77,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "functionCall",
+                              "lValueRequested": false,
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "863:23:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_bytes_memory_ptr",
+                                "typeString": "bytes memory"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_bytes_memory_ptr",
+                                "typeString": "bytes memory"
+                              }
+                            ],
+                            "id": 73,
+                            "name": "keccak256",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 93,
+                            "src": "853:9:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
+                              "typeString": "function () pure returns (bytes32)"
+                            }
+                          },
+                          "id": 78,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "853:34:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          }
+                        },
+                        "src": "797:90:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "id": 80,
+                    "isConstant": false,
+                    "isInlineArray": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "TupleExpression",
+                    "src": "796:92:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 63,
+                  "id": 81,
+                  "nodeType": "Return",
+                  "src": "789:99:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 83,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "verifyHash",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 60,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 57,
+                  "name": "_fileID",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 83,
+                  "src": "675:12:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 56,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "675:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 59,
+                  "name": "_hash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 83,
+                  "src": "689:12:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 58,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "689:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "674:28:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 63,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 62,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 83,
+                  "src": "724:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 61,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "724:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "723:6:0"
+            },
+            "scope": 84,
+            "src": "655:240:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 85,
+        "src": "26:872:0"
+      }
+    ],
+    "src": "0:899:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {
+    "1000": {
+      "events": {},
+      "links": {},
+      "address": "0xc5ae5f12a6d1a2bbccfd3d7138c51d1572bf2c36",
+      "transactionHash": "0x1ae6f3351c9f441378e5f7b910dc9f5bba2ca6e2e4bc7fc557f3318293298446"
+    }
+  },
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-11-19T15:21:34.210Z"
+}
