@@ -4,13 +4,19 @@ var Caver = require('caver-js');
 var caver = new Caver('http://ubuntu.hanukoon.com:8551/');
 caver.klay.unlockAccount(wallet, '_labc', 30000);
 var Biss = require('./build/contracts/Biss.json');
-var Biss = new caver.klay.Contract(Biss.abi, '0x58438a0b9ddc04aec7a03c5d470ac59230f35233');
+var Biss = new caver.klay.Contract(Biss.abi, '0x17231a90f559f87ff1490c2eb8cec0c884d79a5d');
 
 // saveData : ASDF
-Biss.methods.saveData('ASDF').send({from: wallet})
-
-// loadData
-Biss.methods.loadData(wallet).call().then(console.log) // ASDF
+Biss.methods.saveData('asdf').send({from: wallet})
+.on('receipt', function(receipt) {
+    // console.log(receipt);
+    var transactionHash = receipt.transactionHash; // Get transactionHash from receipt
+    // console.log(transactionHash);
+    caver.klay.getTransaction(transactionHash).then(function(transaction) {
+        // console.log(transaction.input); // Get transaction.input(hex)
+        console.log(caver.utils.hexToAscii(transaction.input)); // ÄjÒ asdf -> 앞에 있는 length 4짜리 'ÄjÒ ' 지우고 쓰기!
+    });
+});
 
 // saveKey : tHisIsS3cretKey
 Biss.methods.saveKey(1, 'tHisIsS3cretKey').send({from: wallet})
