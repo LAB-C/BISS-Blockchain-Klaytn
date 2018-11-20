@@ -3,6 +3,17 @@ Smart Contract used in BISS(Updated after Hackathon)
 
 BISS 시스템에서 사용되는 스마트 컨트랙트입니다.
 
+## 목차
+
+- [데이터 전송 및 수신](#데이터-전송-및-수신)
+    - [sendData](#senddata)
+    - [txHash에서 데이터 꺼내기](#txHash에서-데이터-꺼내기)
+
+- [펌웨어 업데이트 관련](#펌웨어-업데이트-관련)
+    - [saveKey](#saveKey)
+    - [saveHash](#saveHash)
+    - [verifyHash](#verifyHash)
+
 ## 데이터 전송 및 수신
 1. 디바이스는 자신의 Klaytn 지갑 주소를 sender로 sendData()를 호출하고, 돌아오는 receipt의 txHash를 서버로 보냅니다.
 2. 서버는 txHash의 트랜잭션을 조회하고, 전송된 데이터를 구합니다.
