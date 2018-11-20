@@ -4,10 +4,24 @@ var Caver = require('caver-js');
 var caver = new Caver('http://ubuntu.hanukoon.com:8551/');
 caver.klay.unlockAccount(wallet, '_labc', 30000);
 var Biss = require('./build/contracts/Biss.json');
-var Biss = new caver.klay.Contract(Biss.abi, '0xc5ae5f12a6d1a2bbccfd3d7138c51d1572bf2c36');
+var Biss = new caver.klay.Contract(Biss.abi, '0x58438a0b9ddc04aec7a03c5d470ac59230f35233');
+
+// saveData : ASDF
+Biss.methods.saveData('ASDF').send({from: wallet})
+
+// loadData
+Biss.methods.loadData(wallet).call().then(console.log) // ASDF
 
 // saveKey : tHisIsS3cretKey
-Biss.methods.saveKey(1, 'tHisIsS3cretKey').send({from: wallet});
+Biss.methods.saveKey(1, 'tHisIsS3cretKey').send({from: wallet})
+.on('receipt', function(receipt) {
+    // console.log(receipt);
+    var transactionHash = receipt.transactionHash; // Get transactionHash from receipt
+    // console.log(transactionHash);
+    caver.klay.getTransaction(transactionHash).then(function(transaction) {
+        console.log(transaction.input); // Get transaction.input(hex)
+    });
+});
 
 // saveHash : c4ca4238a0b923820dcc509a6f75849b
 Biss.methods.saveHash(1, 'c4ca4238a0b923820dcc509a6f75849b').send({from: wallet});
