@@ -17,10 +17,6 @@ contract Biss {
         firmwares[_fileID].hash = _hash;
     }
 
-    function loadKey(uint _fileID) public view returns (string _key) { // fileID로 해당 펌웨어의 key를 로드
-        _key = firmwares[_fileID].key;
-    }
-
     function verifyHash(uint _fileID, string _hash) public view returns (bool) { // 해당 fileID의 해시가 _hash인지 확인
         return (keccak256(abi.encodePacked(firmwares[_fileID].hash)) == keccak256(abi.encodePacked(_hash)));
     }

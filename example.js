@@ -12,11 +12,8 @@ Biss.methods.saveKey(1, 'tHisIsS3cretKey').send({from: wallet});
 // saveHash : c4ca4238a0b923820dcc509a6f75849b
 Biss.methods.saveHash(1, 'c4ca4238a0b923820dcc509a6f75849b').send({from: wallet});
 
-// loadKey
-Biss.methods.loadKey(1).call().then(console.log); // tHisIsS3cretKey
-
 // verifyHash #1(false)
-Biss.methods.verifyHash(1, '0x34256756').call().then(console.log); // 0x0000000000000000000000000000000000000000000000000000000000000000
+Biss.methods.verifyHash(1, 'cfcd208495d565ef66e7dff9f98764da').call().then(console.log); // 0x0000000000000000000000000000000000000000000000000000000000000000
 
 //verifyHash #2(true)
 Biss.methods.verifyHash(1, 'c4ca4238a0b923820dcc509a6f75849b').call().then(console.log); // true
