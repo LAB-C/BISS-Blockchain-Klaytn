@@ -48,7 +48,39 @@ console.log(caver.utils.hexToAscii(hex));
 ## 펌웨어 업데이트 관련
 
 ### saveKey
+```js
+Biss.methods.saveKey('1', 'I9L1bUJyY5289a0eec94a441e9624d5108c4f8c084').send({from: '0x81733c8d5ee8c76241c33537c072cd05d71b3d21'})
+```
+
+#### 인수
+| 이름       | 타입      | 설명      |
+| :-------- | :------- | :------ |
+| `_fileID` | `string` | 파일 ID  |
+| `_key`    | `string` | 파일 key |
 
 ### saveHash
+```js
+Biss.methods.saveHash(file_id, hash).send({from: '0x81733c8d5ee8c76241c33537c072cd05d71b3d21'})
+```
+
+#### 인수
+| 이름       | 타입      | 설명      |
+| :-------- | :------- | :------- |
+| `_fileID` | `string` | 파일 ID   |
+| `_hash`   | `string` | 파일 hash |
 
 ### verifyHash
+```js
+Biss.methods.verifyHash('1', '931d9212c4071dc694a9d73e6533c7d4').call()
+```
+
+#### 인수
+| 이름       | 타입      | 설명      |
+| :-------- | :------- | :------- |
+| `_fileID` | `string` | 파일 ID   |
+| `_hash`   | `string` | 파일 hash |
+
+#### 반환값
+| 타입    | 설명      |
+| :----- | :------- |
+| `bool` | 블록체인에 저장된 `_fileID`의 해시와 `_hash`가 같은 경우 `true` |
